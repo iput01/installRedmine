@@ -47,8 +47,10 @@ chkconfig mysqld on
 
 mysql_secure_installation
 
+
+
 echo "create database db_redmine default character set utf8;" >> mysql_create_table
-echo "grant all on db_redmine.* to user_redmine@localhost identified by "$MYSQL_PASSWORD";" >> mysql_create_table
+echo "grant all on db_redmine.* to user_redmine@localhost identified by \""$MYSQL_PASSWORD"\";" >> mysql_create_table
 echo "flush privileges;" >> mysql_create_table
 
 mysql -u root -p$MYSQL_ROOT_PASSWORD < mysql_create_table
