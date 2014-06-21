@@ -6,8 +6,8 @@ then
  exit 1
 fi
 DOMAIN_NAME=$1
-MYSQL_PASSWORD=$2
-MYSQL_ROOT_PASSWORD=$3
+MYSQL_ROOT_PASSWORD=$2
+MYSQL_PASSWORD=$3
 
 #yum install -y git
 #yum install -y vim
